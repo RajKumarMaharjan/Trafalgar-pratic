@@ -2351,6 +2351,7 @@
     }
 
     @include sm {
+        margin-top: 100px;
         .article-text {
             h1 {
                 font-size: 24px;
@@ -2616,6 +2617,16 @@
     }
 
     @include xxl {
+        margin-top: 222px;
+        .article-text {
+            h1 {
+                font-size: 36px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
         .bg-image {
             .left {
                 img {
@@ -2941,7 +2952,7 @@
             form {
                 max-width: 950px;
                 max-height: 495px;
-                margin: 50px 150px;
+                margin: 50px 230px;
 
                 .user-name {
                     ul {
@@ -2953,8 +2964,11 @@
                     }
                 }
 
+                #userMessage {
+                    height: 150px;
+                }
                 button {
-                    margin-left: 150px;
+                    margin-left: 202px;
                 }
             }
         }
@@ -2963,6 +2977,10 @@
     @include xxxl {
         .contact-us {
             margin-left: 450px;
+            form{
+                margin: 50px 100px ;
+
+            }
         }
     }
 }
