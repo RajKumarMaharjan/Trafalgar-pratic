@@ -128,6 +128,12 @@
                 color: $white;
                 font-weight: 700;
                 font-size: 18px;
+                &:hover{
+                    background-color: $white;
+                    color: $blue;
+                    border: 1px solid ;
+                    font-size: 17px;
+                }
             }
                 h1 {
                     font-weight: 700;
@@ -303,9 +309,10 @@
     }
     @include xxl {
         .header-content-text {
-            margin-left: 150px;
+            margin-left: 80px;
             width: 445px;
             height: 340px;
+           
             button {
                 width: 200px;
                 height: 60px;
@@ -360,6 +367,9 @@
         position: fixed;
         cursor: pointer;
 
+        &:hover{
+            border: 1px solid $black;
+        }
         img {
             width: 100%;
         }
@@ -1287,6 +1297,10 @@
             font-size: 16px;
             font-weight: 700;
             align-items: center;
+            &:hover{
+                font-size: 24px;
+                text-decoration: underline;
+            }
         }
     }
 
@@ -1483,6 +1497,14 @@
             align-items: center;
         }
     }
+    .healthcare-image{
+        animation-name: health-img;
+        animation-duration: 3s;
+        @keyframes health-img{
+            0% {margin-left: -900px;}
+            100% {margin-right: 0%;}
+        }    
+    }
 
 }
 
@@ -1544,9 +1566,12 @@
                     font-size: 16px;
                     font-weight: 700;
                     align-items: center;
-
+                    &:hover{
+                        font-size: 24px;
+                    }
                     span {
                         margin-left: 5px;
+                       
                     }
                 }
             }
@@ -1611,9 +1636,12 @@
                         font-size: 16px;
                         font-weight: 700;
                         align-items: center;
-
+                        &:hover{
+                            font-size: 24px;
+                        }
                         span {
                             margin-left: 5px;
+                           
                         }
                     }
                 }
@@ -1675,7 +1703,7 @@
                         font-size: 16px;
                         font-weight: 700;
                         align-items: center;
-
+                       
                         span {
                             margin-left: 5px;
                         }
@@ -2368,6 +2396,16 @@
             .left {
                 img {
                     width: 20%;
+                    animation-name:rotation ;
+                    animation-duration: 2s;
+                    @keyframes rotation {
+                        from {
+                          transform: rotate(0deg);
+                        }
+                        to {
+                          transform: rotate(359deg);
+                        }
+                      }
                 }
             }
 
@@ -2690,6 +2728,7 @@
 
                     img {
                         border-radius: 20px 20px 0px 0px;
+                        
                     }
 
                     .article-text {
@@ -2758,13 +2797,13 @@
 
             button {
                 margin-top: 420px;
-                width: 170px;
-                height: 50px;
+                width: 200px;
+                height: 56px;
                 border: 1.4px solid #458FF6;
                 border-radius: 55px;
                 background-color: #FFFFFF;
                 color: $blue;
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 700;
                 margin-left: 400px;
             }
@@ -2793,6 +2832,7 @@
         }
 
     }
+   
 
 }
 
@@ -2978,7 +3018,7 @@
         .contact-us {
             margin-left: 450px;
             form{
-                margin: 50px 100px ;
+                margin: 50px 110px ;
 
             }
         }

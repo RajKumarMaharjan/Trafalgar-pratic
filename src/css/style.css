@@ -170,6 +170,12 @@ figure {
     font-weight: 700;
     font-size: 18px;
   }
+  .header-content .header-content-text button:hover {
+    background-color: #F5F5F5;
+    color: #458FF6;
+    border: 1px solid;
+    font-size: 17px;
+  }
   .header-content .header-content-text h1 {
     font-weight: 700;
     font-size: 30px;
@@ -337,7 +343,7 @@ figure {
 }
 @media (min-width: 1400px) {
   .header-content .header-content-text {
-    margin-left: 150px;
+    margin-left: 80px;
     width: 445px;
     height: 340px;
   }
@@ -388,6 +394,9 @@ figure {
   z-index: 99;
   position: fixed;
   cursor: pointer;
+}
+.scroll-btn #myBtn:hover {
+  border: 1px solid #000000;
 }
 .scroll-btn #myBtn img {
   width: 100%;
@@ -1280,6 +1289,10 @@ figure {
     font-weight: 700;
     align-items: center;
   }
+  .Healthcare button:hover {
+    font-size: 24px;
+    text-decoration: underline;
+  }
 }
 @media (min-width: 768px) {
   .Healthcare {
@@ -1452,6 +1465,18 @@ figure {
     align-items: center;
   }
 }
+.Healthcare .healthcare-image {
+  animation-name: health-img;
+  animation-duration: 3s;
+}
+@keyframes health-img {
+  0% {
+    margin-left: -900px;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
 
 @media (min-width: 480px) {
   .download-app .small-screen-mobile-app .app-images .trafalgar-mobile-app {
@@ -1496,6 +1521,9 @@ figure {
     font-size: 16px;
     font-weight: 700;
     align-items: center;
+  }
+  .download-app .small-screen-mobile-app .app-text button:hover {
+    font-size: 24px;
   }
   .download-app .small-screen-mobile-app .app-text button span {
     margin-left: 5px;
@@ -1553,6 +1581,9 @@ figure {
     font-size: 16px;
     font-weight: 700;
     align-items: center;
+  }
+  .download-app .big-screen-mobile-app .app-content .app-text button:hover {
+    font-size: 24px;
   }
   .download-app .big-screen-mobile-app .app-content .app-text button span {
     margin-left: 5px;
@@ -2144,6 +2175,16 @@ figure {
   }
   .lates-article .bg-image .left img {
     width: 20%;
+    animation-name: rotation;
+    animation-duration: 2s;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
   }
   .lates-article .bg-image .right img {
     width: 50%;
@@ -2440,13 +2481,13 @@ figure {
   }
   .lates-article .big-screen-md button {
     margin-top: 420px;
-    width: 170px;
-    height: 50px;
+    width: 200px;
+    height: 56px;
     border: 1.4px solid #458FF6;
     border-radius: 55px;
     background-color: #FFFFFF;
     color: #458FF6;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     margin-left: 400px;
   }
@@ -2609,7 +2650,7 @@ figure {
     margin-left: 450px;
   }
   .contact .contact-us form {
-    margin: 50px 100px;
+    margin: 50px 110px;
   }
 }
 
