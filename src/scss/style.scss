@@ -2377,7 +2377,8 @@
         border-radius: 5px;
         margin: auto;
     }
-
+    
+//for small screen
     @include sm {
         margin-top: 100px;
         .article-text {
@@ -2586,7 +2587,135 @@
             display: none;
         }
     }
+    .big-screen-md {
 
+        @include sm {
+            display: none;
+        }
+
+        @include md {
+            display: block;
+
+            .article-content {
+                margin-top: -65px;
+                position: absolute;
+
+                .article {
+                    background: #FFFFFF;
+                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                    border-radius: 20px;
+
+                    img {
+                        border-radius: 20px 20px 0px 0px;
+                        
+                    }
+
+                    .article-text {
+                        padding: 14px;
+
+                        h5 {
+                            margin-bottom: 16px;
+                        }
+
+                        a {
+                            i {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                margin-top: 420px;
+                width: 170px;
+                height: 50px;
+                border: 1.4px solid #458FF6;
+                border-radius: 55px;
+                background-color: #FFFFFF;
+                color: $blue;
+                font-size: 16px;
+                font-weight: 700;
+                align-items: center;
+                margin-left: 250px;
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                }
+            }
+        }
+
+        @include lg {
+            display: block;
+
+            .article-content {
+                margin-top: -60px;
+                margin-left: 50px;
+                padding-right: 70px;
+
+                .article {
+                    background: #FFFFFF;
+                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                    border-radius: 20px;
+
+                    img {
+                        border-radius: 20px 20px 0px 0px;
+                    }
+
+                    .article-text {
+                        padding: 22px;
+
+                        h5 {
+                            margin-bottom: 16px;
+                        }
+
+                        a {
+                            i {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                margin-top: 420px;
+                width: 200px;
+                height: 56px;
+                border: 1.4px solid #458FF6;
+                border-radius: 55px;
+                background-color: #FFFFFF;
+                color: $blue;
+                font-size: 18px;
+                font-weight: 700;
+                margin-left: 400px;
+            }
+        }
+
+        @include xl {
+            .article-content {
+                margin-top: -60px;
+            }
+
+            button {
+                margin-left: 480px;
+                margin-top: 470px;
+            }
+        }
+
+        @include xxl {
+            .article-content {
+                margin-top: -70px;
+            }
+
+            button {
+                margin-left: 600px;
+
+            }
+        }
+
+    }
+    //bg img style
     @include md {
         .bg-image {
             position: relative;
@@ -2664,7 +2793,6 @@
                 margin-bottom: 20px;
             }
         }
-
         .bg-image {
             .left {
                 img {
@@ -2708,130 +2836,7 @@
         }
     }
 
-    .big-screen-md {
-
-        @include sm {
-            display: none;
-        }
-
-        @include md {
-            display: block;
-
-            .article-content {
-                margin-top: -65px;
-                position: absolute;
-
-                .article {
-                    background: #FFFFFF;
-                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-                    border-radius: 20px;
-
-                    img {
-                        border-radius: 20px 20px 0px 0px;
-                        
-                    }
-
-                    .article-text {
-                        padding: 14px;
-
-                        h5 {
-                            margin-bottom: 16px;
-                        }
-
-                        a {
-                            i {
-                                margin-left: 10px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            button {
-                margin-top: 420px;
-                width: 170px;
-                height: 50px;
-                border: 1.4px solid #458FF6;
-                border-radius: 55px;
-                background-color: #FFFFFF;
-                color: $blue;
-                font-size: 16px;
-                font-weight: 700;
-                align-items: center;
-                margin-left: 250px;
-            }
-        }
-
-        @include lg {
-            display: block;
-
-            .article-content {
-                margin-top: -60px;
-                margin-left: 50px;
-                padding-right: 70px;
-
-                .article {
-                    background: #FFFFFF;
-                    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-                    border-radius: 20px;
-
-                    img {
-                        border-radius: 20px 20px 0px 0px;
-                    }
-
-                    .article-text {
-                        padding: 22px;
-
-                        h5 {
-                            margin-bottom: 16px;
-                        }
-
-                        a {
-                            i {
-                                margin-left: 10px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            button {
-                margin-top: 420px;
-                width: 200px;
-                height: 56px;
-                border: 1.4px solid #458FF6;
-                border-radius: 55px;
-                background-color: #FFFFFF;
-                color: $blue;
-                font-size: 18px;
-                font-weight: 700;
-                margin-left: 400px;
-            }
-        }
-
-        @include xl {
-            .article-content {
-                margin-top: -60px;
-            }
-
-            button {
-                margin-left: 480px;
-                margin-top: 470px;
-            }
-        }
-
-        @include xxl {
-            .article-content {
-                margin-top: -70px;
-            }
-
-            button {
-                margin-left: 600px;
-
-            }
-        }
-
-    }
+  
    
 
 }
@@ -2871,7 +2876,10 @@
         color: $blue;
         font-weight: 700;
         margin-top: 22px;
-
+        &:hover{
+            background-color: $blue;
+            color: $white;
+        }
     }
 
     @include sm {
