@@ -363,6 +363,23 @@ figure {
     color: #F5F5F5;
     font-weight: 700;
     font-size: 18px;
+    animation: bounce-in 4s ease infinite;
+  }
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   .header-content .header-content-text h1 {
     font-weight: 700;
